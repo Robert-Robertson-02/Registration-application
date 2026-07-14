@@ -8,13 +8,15 @@ const flash = require('connect-flash');
 
 const app = express();
 
-// Database connection (local MySQL)
+// Database connection (Azure MySQL)
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '3Sen4Honrs@',
-    port: 3307,
-    database: 'mydb'
+    host: 'c237-meilan-mysql.mysql.database.azure.com',
+    user: 'c237_005',
+    password: 'c237012@2026!',
+    database: 'c237_005_team3_myregistrationapp',
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 db.connect((err) => {
