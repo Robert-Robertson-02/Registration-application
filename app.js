@@ -12,7 +12,7 @@ const app = express();
 const db = mysql.createConnection({
     host: 'c237-meilan-mysql.mysql.database.azure.com',
     user: 'c237_005',
-    password: 'c237012@2026!',
+    password: 'c237005@2026!',
     database: 'c237_005_team3_myregistrationapp',
     ssl: {
         rejectUnauthorized: false
