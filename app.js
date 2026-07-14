@@ -11,10 +11,10 @@ const app = express();
 // Database connection
 // Credentials are pulled from environment variables (set these in Render's Environment tab)
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || 'c237-meilan-mysql.mysql.database.azure.com',
-    user: process.env.DB_USER || 'c237_012',
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME || 'c237_005_team3_registratorapp',
+    host: 'c237-meilan-mysql.mysql.database.azure.com',
+    user: 'c237_012',
+    password: 'c237012@2026!',
+    database: 'c237_005_team3_registratorapp',
     ssl: {
         rejectUnauthorized: false
     }
