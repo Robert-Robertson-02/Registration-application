@@ -8,16 +8,13 @@ const flash = require('connect-flash');
 
 const app = express();
 
-// Database connection
-// Credentials are pulled from environment variables (set these in Render's Environment tab)
+// Database connection (local MySQL)
 const db = mysql.createConnection({
-    host: 'c237-meilan-mysql.mysql.database.azure.com',
-    user: 'c237_012',
-    password: 'c237012@2026!',
-    database: 'c237_005_team3_registratorapp',
-    ssl: {
-        rejectUnauthorized: false
-    }
+    host: 'localhost',
+    user: 'root',
+    password: '3Sen4Honrs@',
+    port: 3307,
+    database: 'mydb'
 });
 
 db.connect((err) => {
